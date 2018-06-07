@@ -30,5 +30,6 @@ This will enable the webpack watcher, which allows for live updating
 ## Versioning
 Version | Update
 --- | --- |
+0.0.3 | Added basic drop zone
 0.0.2 | Added bootstrap and README.md, and updated basic app structure
 0.0.1 | Initial commit

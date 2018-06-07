@@ -3,29 +3,20 @@
   border-radius: 10px;
   height: 120px;
   padding: 5px 25px;
-  width: 100%;
-  .image {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-  .image-row {
-    align-items: center;
-    height: 100%;
-    padding: 10px;
-  }
 
-  .temp-image-1 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/46/Devils_Tower_CROP.jpg");
+  .image-wrapper {
+    position: relative;
   }
-  .temp-image-2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Colorado_National_Monument_entrance.jpg/1200px-Colorado_National_Monument_entrance.jpg");
-  }
-  .temp-image-3 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wukoki_Ruin.tif/lossy-page1-1200px-Wukoki_Ruin.tif.jpg");
-  }
-  .temp-image-4 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Montezumas_castle_arizona.jpg/1200px-Montezumas_castle_arizona.jpg");
+  .image {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
   }
 }
