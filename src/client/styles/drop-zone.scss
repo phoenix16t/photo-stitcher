@@ -3,13 +3,24 @@
   border-radius: 10px;
   height: 120px;
   padding: 5px 25px;
+  position: relative;
+
+  .drop-zone-highlight {
+    background-color: darkturquoise;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    opacity: .3;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   .image-wrapper {
     position: relative;
   }
   .image {
     bottom: 0;
-    height: auto;
     left: 0;
     margin: auto;
     max-height: 100%;
@@ -17,6 +28,5 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: auto;
   }
 }

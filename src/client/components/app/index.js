@@ -8,6 +8,7 @@ export default class App extends React.Component {
     super();
     this.state = { images: [] };
 
+    this.handleRemoveImage = this.handleRemoveImage.bind(this);
     this.handleUpload = this.handleUpload.bind(this);
     this.translateImage = this.translateImage.bind(this);
   }
@@ -18,6 +19,12 @@ export default class App extends React.Component {
 
   componentWillUnmount() {
     reader.removeEventListener('load', this.translateImage);
+  }
+
+  handleRemoveImage(idx) {
+    const images = this.state.images;
+    images.splice(idx, 1);
+    this.setState({ images });
   }
 
   handleUpload(evt) {
@@ -51,6 +58,7 @@ export default class App extends React.Component {
         </div>
 
         <DropZone
+          handleRemoveImage={this.handleRemoveImage}
           handleUpload={this.handleUpload}
           images={this.state.images} />
 
