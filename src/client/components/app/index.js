@@ -15,7 +15,7 @@ export default class App extends React.Component {
   };
 
   handleRemoveImage(idx) {
-    const images = this.state.images;
+    const images = [...this.state.images];
     images.splice(idx, 1);
     this.setState({ images });
   };
@@ -32,7 +32,7 @@ export default class App extends React.Component {
 
   // reads the source image and returns a base64 encoded version
   readFile(file) {
-    return new Promise(function(resolve, reject) {
+    return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onload = (evt) => {
         if(evt && evt.target) {
@@ -46,7 +46,7 @@ export default class App extends React.Component {
 
   // renders the image
   renderDummyImage(src) {
-    return new Promise(function(resolve, reject) {
+    return new Promise((resolve, reject) => {
       const rendered = new Image();
       rendered.onload = () => {
         resolve({ src, rendered });
@@ -57,7 +57,7 @@ export default class App extends React.Component {
 
   // updates the image array with the retrieved data
   updateImageState(image) {
-    const images = this.state.images;
+    const images = [...this.state.images];
     if(images.length >= 4) {
       images.length = 3;
     }

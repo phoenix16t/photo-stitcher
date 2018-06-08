@@ -34,6 +34,7 @@ This will enable the webpack watcher, which allows for live updating
 ## Versioning
 Version | Update
 --- | --- |
+1.0.1 | Update to properly clone array values
 1.0.0 | Cleaning up, MVP
 0.0.5 | Added final image rendering, preview, ability to download
 0.0.4 | Added drag and drop, ability to remove images
