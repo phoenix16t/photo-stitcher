@@ -1,32 +1,39 @@
-.drop-zone {
-  background-color: #eee;
-  border-radius: 10px;
-  height: 120px;
-  padding: 5px 25px;
-  position: relative;
-
-  .drop-zone-highlight {
-    background-color: darkturquoise;
-    border-radius: 10px;
-    bottom: 0;
-    left: 0;
-    opacity: .3;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .image-wrapper {
+.drop-zone-wrapper{
+  .drop-zone {
+    background-color: #eee;
+    border-radius: 7px;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 5px 25px;
     position: relative;
+
+    .drop-zone-highlight {
+      background-color: darkturquoise;
+      border-radius: 7px;
+      bottom: 0;
+      left: 0;
+      opacity: .3;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .image-wrapper {
+      position: relative;
+    }
+    .image {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
-  .image {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    max-height: 100%;
-    max-width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+  .notes {
+    font-size: 10px;
+    margin-bottom: 5px;
+    width: 100%;
   }
 }

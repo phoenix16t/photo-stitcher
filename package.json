@@ -1,6 +1,6 @@
 {
   "name": "photo-stitcher",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A small app that creates a new image for 4 uploaded images",
   "main": "index.js",
   "author": "Eddie Jimenez",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "merge-images": "^1.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
