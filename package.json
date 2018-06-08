@@ -1,6 +1,6 @@
 {
   "name": "photo-stitcher",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "A small app that creates a new image for 4 uploaded images",
   "main": "index.js",
   "author": "Eddie Jimenez",

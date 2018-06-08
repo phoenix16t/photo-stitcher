@@ -1,27 +1,31 @@
 # Photo Stitcher
 
 ## Getting Started
-Clone the repo
+Clone the repo:
 ```
 git clone https://github.com/phoenix16t/photo-stitcher.git
 ```
 
 ### Installing
-Open the project directory and install dependencies
+Open the project directory and install dependencies:
 ```
 cd photo-stitcher
 npm install
 ```
-Once the dust has settled, start up the application in production mode
+
+### Production mode
+Once the installation is complete, the application can be started in production mode:
 ```
 npm start
 ```
-This will run the build and serve the project on localhost:3000. You can also run the build and start the node server manually
+This will run the build and serve the project on localhost:3000. Please note - it may take a few moments for the build to finish. The build process and node server can be started manually:
 ```
-npm run build
+webpack --config webpack.config.js --mode production
 node ./src/server/index.js
 ```
-Finally, you can run the app in development mode
+
+### Development mode
+The application can also be started in development mode:
 ```
 npm run start-dev
 ```
@@ -30,6 +34,7 @@ This will enable the webpack watcher, which allows for live updating
 ## Versioning
 Version | Update
 --- | --- |
+1.0.0 | Cleaning up, MVP
 0.0.5 | Added final image rendering, preview, ability to download
 0.0.4 | Added drag and drop, ability to remove images
 0.0.3 | Added basic drop zone

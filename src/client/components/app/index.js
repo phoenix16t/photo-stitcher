@@ -67,22 +67,24 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="container app drop-shadow">
+      <div className="app drop-shadow">
+        <div className="container">
 
-        <div className="row">
-          <div className="col center">
-            <h1 className="title">The Photo Stitcher</h1>
+          <div className="row">
+            <div className="col center">
+              <h1 className="title">The Photo Stitcher</h1>
+            </div>
           </div>
+
+          <DropZone
+            handleRemoveImage={this.handleRemoveImage}
+            handleUpload={this.handleUpload}
+            images={this.state.images} />
+
+          <StitchView
+            images={this.state.images} />
+
         </div>
-
-        <DropZone
-          handleRemoveImage={this.handleRemoveImage}
-          handleUpload={this.handleUpload}
-          images={this.state.images} />
-
-        <StitchView
-          images={this.state.images} />
-
       </div>
     );
   };

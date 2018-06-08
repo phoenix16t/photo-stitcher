@@ -36,13 +36,9 @@ export default class StitchView extends React.Component {
       });
 
       // use the "mergeImages" tool to create the final image
-      mergeImages(newImageData, {
-        height: maxHeight,
-        width: accumulatedWidth
-      })
-        .then(mergedImage => {
-          this.setState({ mergedImage: mergedImage });
-        });
+      const size = { height: maxHeight, width: accumulatedWidth };
+      mergeImages(newImageData, size)
+        .then(mergedImage => this.setState({ mergedImage }));
     }
     else {
       this.setState({ mergedImage: '' });

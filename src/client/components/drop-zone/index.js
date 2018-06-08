@@ -37,7 +37,7 @@ export default class DropZone extends React.Component {
     this.dropZoneHighlightRef.current.removeEventListener('dragenter', this.handleDragEnter);
     this.dropZoneHighlightRef.current.removeEventListener('dragleave', this.handleDragLeave);
     this.dropZoneHighlightRef.current.removeEventListener('drop', this.handleDrop);
-  }
+  };
 
   // drag listener function for highlighting the drop zone
   handleDragEnter(evt) {
